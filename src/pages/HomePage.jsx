@@ -29,11 +29,12 @@ const HomePage = ({ countries, setCountries }) => {
         if (!countries.length) {
             axios.get(ALL_COUNTRIES).then(({ data }) => setCountries(data));
         }
-        //esLint-disable-next-line
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect(() => {
         handleSearch();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[countries]);
 
     return (

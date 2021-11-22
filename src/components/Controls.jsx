@@ -19,8 +19,8 @@ const Controls = ({onSearch}) => {
         const regionValue = region?.value || '';
 
         onSearch(search,regionValue);
-        // esLint-disable-next-line
-    },[search,region,]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[search,region]);
 
     return (
         <Wrapper>

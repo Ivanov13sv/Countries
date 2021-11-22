@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { IoArrowBack } from 'react-icons/io5';
-import { useParams, useLocation, useNavigate } from 'react-router';
+import { useParams, useNavigate } from 'react-router';
 import { Button } from '../components/Button';
 import { searchByCountry } from '../config';
 import Info from '../components/Info';
